@@ -20,7 +20,7 @@ A beautiful and animated **rolling digital clock and date** Chrome extension —
 
 ## 📸 Preview
 
-![Demo](./demo.gif)
+![Demo](./src.gif)
 <!-- Replace demo.gif with your actual GIF file when ready -->
 
 ---
