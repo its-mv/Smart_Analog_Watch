@@ -40,6 +40,8 @@ A beautiful and animated **rolling digital clock and date** Chrome extension —
 
 5. Your extension is now installed! 🎉
 
+---
+
 ## 🌍 Optional Enhancements
 1. ✅ Included:
 - Persistent theme toggle
@@ -51,16 +53,22 @@ A beautiful and animated **rolling digital clock and date** Chrome extension —
 - Customizable appearance
 - Hourly chime or reminder alerts
 
+---
+
 ## 🛡 Chrome Web Store Friendly
 - 🔒 No tracking
 - ❌ No personal data usage
 - 📦 100% offline-compatible
 - ✅ Easy to use and privacy-respecting
 
+---
+
 ## 🧠 Built With
 - HTML5, CSS3
 - JavaScript (ES6+)
 - Chrome Extensions API
 - ❤️ Passion for clean UI
+
+---
 
 ## License © Meet Vadgama
