@@ -1,13 +1,9 @@
-Sure! Here's a complete and **attractive `README.md`** for your Chrome Extension project, including what it does, features, instructions to install as a local extension, and future ideas. You can copy-paste this into your GitHub repo.
-
----
-
-````markdown
 # 🕒 MV Rolling Clock Extension
 
 A beautiful and animated **rolling digital clock and date** Chrome extension — complete with dark/light mode toggle, smooth digit transitions, and real-time sync. ✨
 
-![Rolling Clock Preview](./screenshot.png) <!-- Optional: replace with actual screenshot -->
+![Rolling Clock Preview](./ss1.png) <!-- Optional: replace with actual screenshot -->
+![Rolling Clock Preview](./ss2.png) <!-- Optional: replace with actual screenshot -->
 
 ---
 
@@ -31,99 +27,38 @@ A beautiful and animated **rolling digital clock and date** Chrome extension —
 ## 🔧 How to Install (Locally)
 
 1. **Download this repository** (or `git clone` it):
-   ```bash
+
    git clone https://github.com/yourusername/mv-rolling-clock-extension.git
-````
+2. **Open Google Chrome, and go to:**
+    i. chrome://extensions/
 
-2. **Open Chrome** and go to:
+3. Enable Developer Mode using the toggle at the top right.
 
-   ```
-   chrome://extensions/
-   ```
+4. Click “Load unpacked”, and select the folder containing manifest.json.
 
-3. **Enable Developer Mode** (toggle in top-right)
+5. Your extension is now installed! 🎉
 
-4. Click **"Load unpacked"** and select the folder where `manifest.json` is located.
+## 🌍 Optional Enhancements
+1. ✅ Included:
+- Persistent theme toggle
+- Internet time sync fallback
+- New Tab override support
 
-5. Done ✅ — The extension is now installed!
-
-> Optionally, if `manifest.json` includes a `chrome_url_overrides` block, the clock will load on each new tab!
-
----
-
-## 💡 Optional Enhancements
-
-* 🧭 \[ ] Internet time sync via API (fallback to system time on failure)
-* 🎨 \[x] Persistent theme toggle via Chrome storage
-* 🧩 \[x] Chrome new tab override (`chrome_url_overrides`)
-* 💬 \[ ] Add notification-based hourly chime or reminders
-* 💰 \[ ] Monetization via optional affiliate links or static sponsored banners (within Chrome Store guidelines)
-
----
-
-## 📂 File Structure
-
-```
-📁 mv-rolling-clock-extension
-├── manifest.json
-├── main.html
-├── script.js
-├── style.css
-├── icon.png
-└── README.md
-```
-
----
+2. 💡 Possible future upgrades:
+- World time zones
+- Customizable appearance
+- Hourly chime or reminder alerts
 
 ## 🛡 Chrome Web Store Friendly
-
-* No tracking
-* No data collection
-* No ads (yet) — future monetization will respect Chrome guidelines
-* Fully offline-compatible
-
----
+- 🔒 No tracking
+- ❌ No personal data usage
+- 📦 100% offline-compatible
+- ✅ Easy to use and privacy-respecting
 
 ## 🧠 Built With
+- HTML5, CSS3
+- JavaScript (ES6+)
+- Chrome Extensions API
+- ❤️ Passion for clean UI
 
-* HTML5, CSS3
-* JavaScript (ES6+)
-* Chrome Extensions API
-* Love for clean UI ❤️
-
----
-
-## 🌐 Coming Soon
-
-* 🌍 World time zones support
-* 🛠 Customization (clock format, font, size)
-* 🧩 Publish to [Chrome Web Store](https://chrome.google.com/webstore/)
-
----
-
-## 🤝 Support & Contribution
-
-If you like this project:
-
-* 🌟 Star it on GitHub!
-* 🧑‍💻 Fork & improve it
-* 💬 Suggest features or report bugs in [Issues](https://github.com/yourusername/mv-rolling-clock-extension/issues)
-
----
-
-## 📜 License
-
-MIT License © [Meet Vadgama](https://github.com/yourusername)
-
-```
-
----
-
-### ✅ What to Replace
-
-- Replace all instances of `yourusername` with your GitHub username
-- Add `screenshot.png` and `demo.gif` if you have visuals
-- Customize the description/credits if needed
-
-Let me know if you'd like a badge-style version too (e.g., for GitHub profile display).
-```
+## License © Meet Vadgama
