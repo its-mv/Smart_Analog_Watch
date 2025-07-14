@@ -3,9 +3,10 @@
 A beautiful and animated **rolling digital clock and date** Chrome extension — complete with dark/light mode toggle, smooth digit transitions, and real-time sync. ✨
 
 ### Light Mode
-![Rolling Clock Preview](./ss1.png) <!-- Optional: replace with actual screenshot -->
+<img src="./ss1.png" alt="Rolling Clock Preview - Light Mode" width="400" height="300">
+
 ### Dark Mode
-![Rolling Clock Preview](./ss2.png) <!-- Optional: replace with actual screenshot -->
+<img src="./ss2.png" alt="Rolling Clock Preview - Dark Mode" width="400" height="300">
 
 ---
 
@@ -22,7 +23,7 @@ A beautiful and animated **rolling digital clock and date** Chrome extension —
 
 ## 📸 Preview
 
-![Demo GIF](./demo.gif) <!-- Replace with a preview if available -->
+<img src="./scr.mp4" alt="Demo Video" width="600" height="400">
 
 ---
 
