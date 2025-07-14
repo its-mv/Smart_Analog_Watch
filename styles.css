@@ -1,0 +1,217 @@
+:root {
+    --bg: #f8f9fa;
+    --text: #111;
+    --digit-bg: #ddd;
+    --highlight-border: #333;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #fff;
+    --digit-bg: #222;
+    --highlight-border: #00ffcc;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 20%;
+    margin-top: -50px;
+}
+
+.digit-wrapper {
+    width: 50px;
+    height: 180px;
+    position: relative;
+}
+
+.digit-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--digit-bg);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+.digit {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.digit.active {
+    transform: scale(1.25);
+    font-weight: bold;
+    color: var(--highlight-border);
+}
+
+/* Highlight pulse effect */
+@keyframes pulse {
+    0%   { transform: scaleY(1); }
+    50%  { transform: scaleY(1.15); }
+    100% { transform: scaleY(1); }
+}
+
+.highlight-ring.pulse {
+    animation: pulse 0.3s ease;
+}
+
+
+.highlight-ring {
+    position: absolute;
+    top: 90px;
+    left: -50%;
+    width: 200%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.highlight-ring::before {
+    content: '';
+    width: 50px;
+    height: 35px;
+    border-radius: 15%;
+    background-color: rgba(0, 0, 0, 0.25); /* Light mode circle */
+    transition: transform 0.2s ease;
+}
+
+body.dark .highlight-ring::before {
+    background-color: rgba(255, 255, 255, 0.08); /* Dark mode circle */
+}
+
+
+.colon {
+    font-size: 2.5rem;
+    padding: 0 5px;
+    margin-top: 50px;
+}
+
+.ampm {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 0;
+    right: 1rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--digit-bg);
+    color: var(--text);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Date */
+.date-display {
+    position: fixed;
+    top: 6.5rem;
+    left: -4%;
+    display: flex;
+    gap: 0.5rem;
+    transform: scale(0.7); /* Smaller than clock */
+}
+
+.date-wrapper {
+    width: 40px;
+    height: 120px;
+    position: relative;
+}
+
+.date-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--digit-bg);
+    border-radius: 6px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.date-ring {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.date-ring::before {
+  content: '';
+  width: 45px;
+  height: 30px;
+  border-radius: 15%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+body.dark .date-ring::before {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.date-digit {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.date-digit.active {
+  transform: scale(1.25);
+  font-weight: bold;
+  color: var(--highlight-border);
+}
+
+@keyframes pulse {
+  0%   { transform: scaleY(1); }
+  50%  { transform: scaleY(1.15); }
+  100% { transform: scaleY(1); }
+}
+
+.date-ring.pulse {
+  animation: pulse 0.3s ease;
+}
+
+.date-slash {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 2px;
+    margin-top: 4rem;
+}
