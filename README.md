@@ -23,7 +23,10 @@ A beautiful and animated **rolling digital clock and date** Chrome extension —
 
 ## 📸 Preview
 
-<img src="./scr.mp4" alt="Demo Video" width="600" height="400">
+<video width="600" height="400" controls>
+  <source src="./scr.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
