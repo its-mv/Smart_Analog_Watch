@@ -1,25 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Rolling Clock",
-  "description": "A rolling animated clock with theme and date display.",
+  "name": "MV Clock Extension",
   "version": "1.0",
-  "action": {
-    "default_icon": "icon.png",
-    "default_popup": "main.html"
-  },
-  "chrome_url_overrides": {
-    "newtab": "main.html"
-  },
+  "description": "A stylish digital clock with date, theme toggle, and internet sync.",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
   },
-  "permissions": ["storage"],
-  "host_permissions": ["https://worldtimeapi.org/"],
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open MV Clock"
+  },
   "web_accessible_resources": [
     {
-      "resources": ["icon.png"],
+      "resources": ["main.html", "style.css", "script.js", "icon.png"],
       "matches": ["<all_urls>"]
     }
   ]
