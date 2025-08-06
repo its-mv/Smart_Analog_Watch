@@ -21,7 +21,7 @@ async function fetchInternetTime() {
 const clockEl = document.getElementById('clock');
 
 const digitRanges = {
-  0: [0, 1, 2],
+  0: [0, 1],
   1: Array.from({ length: 10 }, (_, i) => i),
   2: [0, 1, 2, 3, 4, 5],
   3: Array.from({ length: 10 }, (_, i) => i),
